@@ -669,4 +669,17 @@ iframe {
     color: black;
 }
 
+.table {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .table {
+        font-size: 12px;
+    }
+    .table td a {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
 
