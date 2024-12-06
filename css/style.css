@@ -30,9 +30,12 @@ body {
 .navbar {
     position: sticky;
     top: 0;
-    z-index: 1020; /* Ensure it appears above other content */
-    background-color: #fff; /* Add a background color for visibility */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better aesthetics */
+    z-index: 1020;
+    /* Ensure it appears above other content */
+    background-color: #fff;
+    /* Add a background color for visibility */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a shadow for better aesthetics */
 }
 
 .navbar {
@@ -212,7 +215,8 @@ footer h5 {
     margin-bottom: 20px;
 }
 
-footer p, footer a {
+footer p,
+footer a {
     font-size: 14px;
     color: #d3d3d3;
     text-decoration: none;
@@ -271,18 +275,21 @@ footer a:hover {
 .about {
     margin: 20px 0;
 }
+
 .about img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
+
 .toggle-content {
     display: none;
     padding: 10px;
     background: var(--background-color3);
     margin-top: 10px;
 }
+
 .toggle-btn {
     cursor: pointer;
     padding: 10px;
@@ -334,13 +341,17 @@ footer a:hover {
     position: relative;
     overflow: hidden;
     display: flex;
-    flex-direction: column; /* Stack the content vertically */
-    justify-content: flex-end; /* Push the button to the bottom */
+    flex-direction: column;
+    /* Stack the content vertically */
+    justify-content: flex-end;
+    /* Push the button to the bottom */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-top: 20px; /* Equal margin from top */
-    margin-bottom: 20px; /* Equal margin from bottom */
+    margin-top: 20px;
+    /* Equal margin from top */
+    margin-bottom: 20px;
+    /* Equal margin from bottom */
 }
 
 .card-button {
@@ -386,7 +397,7 @@ footer a:hover {
 
 #table-btn:hover {
     background-color: #b5e9e9;
-    color:black;
+    color: black;
 }
 
 .contact-card {
@@ -499,25 +510,32 @@ iframe {
 }
 
 .card {
-    border: none; /* Remove border from card */
+    border: none;
+    /* Remove border from card */
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Card hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Card hover effect */
 }
 
 .card:hover {
-    transform: scale(1.05); /* Slightly scale the card on hover */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transform: scale(1.05);
+    /* Slightly scale the card on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Add shadow on hover */
 }
 
 .card img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Ensures image fills the card without distortion */
-    border-radius: 10px 10px 0 0; /* Round the top corners of the image */
+    object-fit: cover;
+    /* Ensures image fills the card without distortion */
+    border-radius: 10px 10px 0 0;
+    /* Round the top corners of the image */
 }
 
 .card-footer {
-    text-align: center; /* Center the button */
+    text-align: center;
+    /* Center the button */
     padding: 10px;
 }
 
@@ -580,12 +598,14 @@ iframe {
 
 /* Rotation effect for the icon */
 .rotate-icon {
-    transition: transform 0.3s ease; /* Smooth transition for rotation */
+    transition: transform 0.3s ease;
+    /* Smooth transition for rotation */
 }
 
 /* Rotation of icon when section is open */
 .rotate-icon.rotated {
-    transform: rotate(45deg); /* Rotate icon by 45 degrees */
+    transform: rotate(45deg);
+    /* Rotate icon by 45 degrees */
 }
 
 
@@ -605,6 +625,7 @@ iframe {
         flex: 1 1 100%;
     }
 }
+
 .card {
     --bs-card-spacer-y: 1rem;
     --bs-card-spacer-x: 1rem;
@@ -649,15 +670,18 @@ iframe {
 }
 
 .expertise-box h5 {
-    color: #008080; /* Applies color to the <h5> element */
+    color: #008080;
+    /* Applies color to the <h5> element */
 }
 
 .expertise-box p {
-    color: #008080; /* Applies color to the <p> element */
+    color: #008080;
+    /* Applies color to the <p> element */
 }
 
 .expertise-box:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
     background-color: #008080;
 }
 
@@ -677,9 +701,35 @@ iframe {
     .table {
         font-size: 10px;
     }
+
     .table td a {
         font-size: 10px;
         padding: 8px;
     }
 }
 
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    /* Distance from the bottom */
+    right: 20px;
+    /* Distance from the right */
+    width: 60px;
+    /* Icon size */
+    height: 60px;
+    background-color: #25d366;
+    /* WhatsApp green */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    /* Ensure it stays above other elements */
+    cursor: pointer;
+}
+
+.whatsapp-icon img {
+    width: 50%;
+    height: 50%;
+}
